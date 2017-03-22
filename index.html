@@ -6,9 +6,18 @@
 	<style>
 		.div1{width: 200px;height: 200px;background: red;}
 	</style>
+	<script>
+		window.onload = function(){
+			let oDiv = document.getElementById('div1');
+			let oBtn = document.getElementById('btn1');
+			oBtn.onclick=function(){
+				oDiv.style.background='yellow';
+			}
+		}
+	</script>
 </head>
 <body>
-	<button>按钮</button>
-	<div class="div1"></div>
+	<button id="btn1">按钮</button>
+	<div id="div1"></div>
 </body>
 </html>
